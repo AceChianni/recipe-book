@@ -1,5 +1,5 @@
 import React from "react";
-import "./globals.css";
+import Link from "next/link";
 
 const Layout = ({ children }) => (
   <div className="flex flex-col min-h-screen">
@@ -22,15 +22,4 @@ const Layout = ({ children }) => (
   </div>
 );
 
-export const metadata = {
-  title: "Recipe Book",
-  description: "This is a Recipe Book application",
-};
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
-}
+export default Layout;
